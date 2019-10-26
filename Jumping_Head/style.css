@@ -1,0 +1,100 @@
+body{
+    background-color: #333;
+}
+
+#road{
+    background-color: brown;
+    width: 500px;
+    height: 10px;
+    margin-top: 200px;
+	  position:fixed;
+}
+
+#bobby{
+    width: 100px;
+    height: 20px;
+    background-color: orange;
+    padding-top: 80px;
+    transform: translateY(-132px);
+    animation: move 5s infinite;
+    
+}
+
+#bobby>.legs{
+    width: 20px;
+    height: 20px;
+    margin-left: 40px;
+    
+}
+#bobby>.eye>div{
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    margin-left: 70px;
+    border-radius: 50px;
+    transform: translateY(-80px);
+}
+#bobby>.arm>div{
+    width: 10px;
+    height: 40px;
+    background-color: rgb(138, 67, 0);
+    margin-left: 20px;
+    transform: translateY(-70px);
+    border-bottom: 2px solid white;
+    
+}
+#bobby>.mouth>div{
+    width: 20px;
+    height: 10px;
+    background-color: olive;
+    float: right;
+    transform: translateY(-90px);
+}
+
+#bobby>.legs>div{
+    width: 10px;
+    height: 50px;
+    background-color: rgb(138, 67, 0);
+    float: left;
+    border-bottom: 5px solid #fafafa;
+}
+
+#bobby>.legs>div:first-child{
+    transform: rotate(15deg);
+    animation: run 0.25s infinite;
+    animation-delay: 0.125s;
+}
+
+#bobby>.legs>div:last-child{
+    transform: rotate(-15deg);
+    animation: run 0.25s infinite;
+}
+
+@keyframes run{
+    from{ transform: rotate(-15deg); }
+    to{ transform: rotate(15deg); }
+}
+
+@keyframes move{
+  0%{
+	margin-left: 0px;
+	margin-top:0px;
+  }
+  30%{
+	margin-top: 0px;
+    margin-left: 460px;
+  }
+  40%{
+	margin-top: -30px;
+  }
+  50%{
+	margin-left: 500px;
+	margin-top: 0px;
+  }
+  100%{
+	margin-top: 700px;
+    margin-left: 500px;
+  }
+}
+
+    
