@@ -1,0 +1,26 @@
+body{
+    background-color: #333;
+}
+#main{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    border-radius: 100%;
+}
+#main>.pen{
+    background-color: #333;
+    width: 80px;
+    height: 20px;
+    transform: translateX(-15px) rotate(-45deg) ;
+    margin: 33px; 
+}
+#main>.pen>.triangle{
+    background-color: aqua;
+    width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-right: 15px solid #333;
+    border-bottom: 10px solid transparent;
+    transform: translateX(-20px);
+}
